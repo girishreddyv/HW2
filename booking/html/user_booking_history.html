@@ -1,0 +1,15 @@
+<!-- templates/user_booking_history.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Booking History</title>
+</head>
+<body>
+    <h1>User Booking History</h1>
+    <ul>
+        {% for booking in bookings %}
+            <li>Movie: {{ booking.movie }}, Seat: {{ booking.seat }}, Time: {{ booking.time }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

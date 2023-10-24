@@ -1,0 +1,15 @@
+<!-- templates/movies_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies List</title>
+</head>
+<body>
+    <h1>Movies List</h1>
+    <ul>
+        {% for movie in movies_list %}
+            <li>{{ movie.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
